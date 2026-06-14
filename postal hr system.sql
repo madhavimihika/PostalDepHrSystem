@@ -1,6 +1,6 @@
 use Postal_HR_System;
 
-CREATE TABLE Users (
+CREATE TABLE Users(
     UserID INT PRIMARY KEY IDENTITY(1,1),
     FirstName NVARCHAR(100) NOT NULL,
     Division NVARCHAR(50) NOT NULL,
