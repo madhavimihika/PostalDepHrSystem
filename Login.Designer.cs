@@ -20,6 +20,7 @@
             base.Dispose(disposing);
         }
 
+
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -28,34 +29,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txt_email = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txt_password = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.txt_nic = new System.Windows.Forms.TextBox();
+            this.txt_pw = new System.Windows.Forms.TextBox();
+            this.btn_login = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::PostalDepHrSystem.Properties.Resources.login_button1;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(205, 130);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 40);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Login";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
@@ -67,58 +51,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // txt_email
-            // 
-            this.txt_email.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_email.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_email.Location = new System.Drawing.Point(156, 38);
-            this.txt_email.Multiline = true;
-            this.txt_email.Name = "txt_email";
-            this.txt_email.Size = new System.Drawing.Size(416, 25);
-            this.txt_email.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(27, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 25);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "User Name";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(27, 93);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 25);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Password";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.txt_password);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.txt_email);
-            this.groupBox1.Location = new System.Drawing.Point(226, 175);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(595, 202);
-            this.groupBox1.TabIndex = 6;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Sign In";
-            // 
-            // txt_password
-            // 
-            this.txt_password.Location = new System.Drawing.Point(156, 93);
-            this.txt_password.Name = "txt_password";
-            this.txt_password.Size = new System.Drawing.Size(416, 22);
-            this.txt_password.TabIndex = 6;
-            this.txt_password.UseSystemPasswordChar = true;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::PostalDepHrSystem.Properties.Resources.slpost1;
@@ -129,6 +61,64 @@
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
+            // lbl
+            // 
+            this.lbl.AutoSize = true;
+            this.lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbl.Location = new System.Drawing.Point(282, 166);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(101, 39);
+            this.lbl.TabIndex = 8;
+            this.lbl.Text = "Login";
+            this.lbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Firebrick;
+            this.label1.Location = new System.Drawing.Point(289, 229);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 16);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "NIC";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Firebrick;
+            this.label2.Location = new System.Drawing.Point(289, 268);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 16);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Password";
+            // 
+            // txt_nic
+            // 
+            this.txt_nic.Location = new System.Drawing.Point(372, 223);
+            this.txt_nic.Name = "txt_nic";
+            this.txt_nic.Size = new System.Drawing.Size(145, 22);
+            this.txt_nic.TabIndex = 11;
+            // 
+            // txt_pw
+            // 
+            this.txt_pw.Location = new System.Drawing.Point(372, 262);
+            this.txt_pw.Name = "txt_pw";
+            this.txt_pw.Size = new System.Drawing.Size(145, 22);
+            this.txt_pw.TabIndex = 12;
+            // 
+            // btn_login
+            // 
+            this.btn_login.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btn_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_login.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.btn_login.Location = new System.Drawing.Point(292, 312);
+            this.btn_login.Name = "btn_login";
+            this.btn_login.Size = new System.Drawing.Size(244, 35);
+            this.btn_login.TabIndex = 13;
+            this.btn_login.Text = "Login";
+            this.btn_login.UseVisualStyleBackColor = false;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -136,8 +126,13 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(833, 460);
+            this.Controls.Add(this.btn_login);
+            this.Controls.Add(this.txt_pw);
+            this.Controls.Add(this.txt_nic);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.DoubleBuffered = true;
@@ -145,23 +140,23 @@
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txt_email;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label lbl;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txt_password;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TextBox txt_nic;
+        private System.Windows.Forms.TextBox txt_pw;
+        private System.Windows.Forms.Button btn_login;
+
     }
 }
 

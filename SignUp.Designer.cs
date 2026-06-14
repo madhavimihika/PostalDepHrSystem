@@ -2,15 +2,24 @@
 {
     partial class Sign_Up
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txt_nic;
+        private System.Windows.Forms.TextBox txt_firstName;
+        private System.Windows.Forms.TextBox txt_pw;
+        private System.Windows.Forms.TextBox txt_rePw;
+        private System.Windows.Forms.Button btn_signIn;
+        private System.Windows.Forms.TextBox txt_designation;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox divisionCombo;
+        private System.Windows.Forms.Button btn_login;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,12 +29,6 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -43,162 +46,149 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.divisionCombo = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btn_login = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
+
             // pictureBox1
-            // 
             this.pictureBox1.Image = global::PostalDepHrSystem.Resource1.Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(31, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(41, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(410, 86);
+            this.pictureBox1.Size = new System.Drawing.Size(547, 106);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
+
             // pictureBox2
-            // 
             this.pictureBox2.Image = global::PostalDepHrSystem.Properties.Resources.slpost1;
-            this.pictureBox2.Location = new System.Drawing.Point(31, 101);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Location = new System.Drawing.Point(41, 124);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(157, 258);
+            this.pictureBox2.Size = new System.Drawing.Size(217, 371);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(218, 173);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(25, 13);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "NIC";
-            // 
-            // label2
-            // 
+
+            // label2 (First Name)
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(218, 136);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(291, 167);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 13);
+            this.label2.Size = new System.Drawing.Size(72, 16);
             this.label2.TabIndex = 20;
             this.label2.Text = "First Name";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(218, 272);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "Password";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(218, 309);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 13);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "Re-Password";
-            // 
-            // txt_nic
-            // 
-            this.txt_nic.Location = new System.Drawing.Point(292, 173);
-            this.txt_nic.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_nic.Name = "txt_nic";
-            this.txt_nic.Size = new System.Drawing.Size(176, 20);
-            this.txt_nic.TabIndex = 23;
-            // 
+
             // txt_firstName
-            // 
-            this.txt_firstName.Location = new System.Drawing.Point(292, 136);
-            this.txt_firstName.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_firstName.Location = new System.Drawing.Point(389, 164);
             this.txt_firstName.Name = "txt_firstName";
-            this.txt_firstName.Size = new System.Drawing.Size(176, 20);
+            this.txt_firstName.Size = new System.Drawing.Size(233, 22);
             this.txt_firstName.TabIndex = 24;
-            // 
-            // txt_pw
-            // 
-            this.txt_pw.Location = new System.Drawing.Point(292, 267);
-            this.txt_pw.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_pw.Name = "txt_pw";
-            this.txt_pw.Size = new System.Drawing.Size(176, 20);
-            this.txt_pw.TabIndex = 25;
-            // 
-            // txt_rePw
-            // 
-            this.txt_rePw.Location = new System.Drawing.Point(292, 304);
-            this.txt_rePw.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_rePw.Name = "txt_rePw";
-            this.txt_rePw.Size = new System.Drawing.Size(176, 20);
-            this.txt_rePw.TabIndex = 26;
-            // 
-            // btn_signIn
-            // 
-            this.btn_signIn.Location = new System.Drawing.Point(231, 340);
-            this.btn_signIn.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_signIn.Name = "btn_signIn";
-            this.btn_signIn.Size = new System.Drawing.Size(230, 19);
-            this.btn_signIn.TabIndex = 27;
-            this.btn_signIn.Text = "Sign In";
-            this.btn_signIn.UseVisualStyleBackColor = true;
-            // 
-            // txt_designation
-            // 
-            this.txt_designation.Location = new System.Drawing.Point(292, 236);
-            this.txt_designation.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_designation.Name = "txt_designation";
-            this.txt_designation.Size = new System.Drawing.Size(176, 20);
-            this.txt_designation.TabIndex = 28;
-            // 
-            // label5
-            // 
+
+            // label1 (NIC)
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(291, 213);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 16);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "NIC";
+
+            // txt_nic
+            this.txt_nic.Location = new System.Drawing.Point(389, 210);
+            this.txt_nic.Name = "txt_nic";
+            this.txt_nic.Size = new System.Drawing.Size(233, 22);
+            this.txt_nic.TabIndex = 23;
+
+            // label5 (Division)
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(218, 206);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(291, 254);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 13);
+            this.label5.Size = new System.Drawing.Size(104, 16);
             this.label5.TabIndex = 30;
             this.label5.Text = "Division/Section";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(218, 240);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 13);
-            this.label6.TabIndex = 31;
-            this.label6.Text = "Designation";
-            // 
+
             // divisionCombo
-            // 
+            this.divisionCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.divisionCombo.FormattingEnabled = true;
             this.divisionCombo.Items.AddRange(new object[] {
-            "Operation Division",
-            "Financial Section",
-            "Transport and Maintainance Section",
-            " SL Cusotm"});
-            this.divisionCombo.Location = new System.Drawing.Point(300, 204);
-            this.divisionCombo.Margin = new System.Windows.Forms.Padding(2);
+            "Operations",
+            "Sales",
+            "Human Resources",
+            "Finance",
+            "IT Department",
+            "Administration"});
+            this.divisionCombo.Location = new System.Drawing.Point(400, 251);
             this.divisionCombo.Name = "divisionCombo";
-            this.divisionCombo.Size = new System.Drawing.Size(92, 21);
+            this.divisionCombo.Size = new System.Drawing.Size(222, 24);
             this.divisionCombo.TabIndex = 32;
-            // 
-            // Sign_Up
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+
+            // label6 (Designation)
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(291, 295);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(79, 16);
+            this.label6.TabIndex = 31;
+            this.label6.Text = "Designation";
+
+            // txt_designation
+            this.txt_designation.Location = new System.Drawing.Point(389, 292);
+            this.txt_designation.Name = "txt_designation";
+            this.txt_designation.Size = new System.Drawing.Size(233, 22);
+            this.txt_designation.TabIndex = 28;
+
+            // label3 (Password)
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(291, 335);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 16);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Password";
+
+            // txt_pw
+            this.txt_pw.Location = new System.Drawing.Point(389, 332);
+            this.txt_pw.Name = "txt_pw";
+            this.txt_pw.Size = new System.Drawing.Size(233, 22);
+            this.txt_pw.TabIndex = 25;
+
+            // label4 (Re-Password)
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(291, 380);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(89, 16);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "Re-Password";
+
+            // txt_rePw
+            this.txt_rePw.Location = new System.Drawing.Point(389, 377);
+            this.txt_rePw.Name = "txt_rePw";
+            this.txt_rePw.Size = new System.Drawing.Size(233, 22);
+            this.txt_rePw.TabIndex = 26;
+
+            // btn_signIn (Create Account)
+            this.btn_signIn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_signIn.Location = new System.Drawing.Point(308, 418);
+            this.btn_signIn.Name = "btn_signIn";
+            this.btn_signIn.Size = new System.Drawing.Size(307, 35);
+            this.btn_signIn.TabIndex = 27;
+            this.btn_signIn.Text = "Create Account";
+            this.btn_signIn.UseVisualStyleBackColor = false;
+            this.btn_signIn.Click += new System.EventHandler(this.btn_signIn_Click);
+
+            // btn_login (Already have an Account? Log in)
+            this.btn_login.BackColor = System.Drawing.Color.LightGray;
+            this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_login.Location = new System.Drawing.Point(308, 460);  // KEY: Position after Create Account
+            this.btn_login.Name = "btn_login";
+            this.btn_login.Size = new System.Drawing.Size(307, 35);
+            this.btn_login.TabIndex = 33;
+            this.btn_login.Text = "Already have an Account? Log in";
+            this.btn_login.UseVisualStyleBackColor = false;
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
+
+            // Sign_Up Form
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
-            this.ClientSize = new System.Drawing.Size(488, 429);
+            this.ClientSize = new System.Drawing.Size(651, 530);  // KEY: Increased height
+            this.Controls.Add(this.btn_login);
             this.Controls.Add(this.divisionCombo);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -214,32 +204,12 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Sign_Up";
             this.Text = "Sign Up";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
-
-        #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txt_nic;
-        private System.Windows.Forms.TextBox txt_firstName;
-        private System.Windows.Forms.TextBox txt_pw;
-        private System.Windows.Forms.TextBox txt_rePw;
-        private System.Windows.Forms.Button btn_signIn;
-        private System.Windows.Forms.TextBox txt_designation;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox divisionCombo;
     }
 }
