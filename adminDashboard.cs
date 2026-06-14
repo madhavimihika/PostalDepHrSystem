@@ -343,5 +343,12 @@ namespace PostalDepHrSystem
             this.Show();
 
         }
+
+        private void btn_ViewAllEmp_Click_1(object sender, EventArgs e)
+        {
+            ViewEmployeeDetails viewEmployeeDetails = new ViewEmployeeDetails();    
+            viewEmployeeDetails.ShowDialog();
+            this.Show();
+        }
     }
 }

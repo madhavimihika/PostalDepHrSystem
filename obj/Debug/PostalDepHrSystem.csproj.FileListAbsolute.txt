@@ -47,3 +47,4 @@ C:\Users\mihik\C#\PostalDepHrSystem\PostalDepHrSystem\obj\Debug\PostalDepHrSyste
 C:\Users\mihik\C#\PostalDepHrSystem\PostalDepHrSystem\obj\Debug\PostalDepHrSystem.adminDashboard.resources
 C:\Users\mihik\C#\PostalDepHrSystem\PostalDepHrSystem\obj\Debug\PostalDepHrSystem.findEmployee.resources
 C:\Users\mihik\C#\PostalDepHrSystem\PostalDepHrSystem\obj\Debug\PostalDepHrSystem.EditEmployee.resources
+C:\Users\mihik\C#\PostalDepHrSystem\PostalDepHrSystem\obj\Debug\PostalDepHrSystem.ViewEmployeeDetails.resources

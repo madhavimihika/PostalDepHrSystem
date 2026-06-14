@@ -52,6 +52,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.btn_addEmp1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -66,7 +67,7 @@
             this.lbl_fn.Location = new System.Drawing.Point(246, 67);
             this.lbl_fn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_fn.Name = "lbl_fn";
-            this.lbl_fn.Size = new System.Drawing.Size(84, 18);
+            this.lbl_fn.Size = new System.Drawing.Size(73, 15);
             this.lbl_fn.TabIndex = 1;
             this.lbl_fn.Text = "Full Name";
             // 
@@ -77,7 +78,7 @@
             this.label1.Location = new System.Drawing.Point(245, 123);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 18);
+            this.label1.Size = new System.Drawing.Size(82, 15);
             this.label1.TabIndex = 2;
             this.label1.Text = "Department";
             // 
@@ -88,7 +89,7 @@
             this.label2.Location = new System.Drawing.Point(245, 181);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 18);
+            this.label2.Size = new System.Drawing.Size(64, 15);
             this.label2.TabIndex = 3;
             this.label2.Text = "Job Role";
             // 
@@ -99,7 +100,7 @@
             this.label3.Location = new System.Drawing.Point(644, 97);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 18);
+            this.label3.Size = new System.Drawing.Size(68, 15);
             this.label3.TabIndex = 4;
             this.label3.Text = "Join Date";
             // 
@@ -108,7 +109,7 @@
             this.txt_fn.Location = new System.Drawing.Point(249, 88);
             this.txt_fn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txt_fn.Name = "txt_fn";
-            this.txt_fn.Size = new System.Drawing.Size(392, 24);
+            this.txt_fn.Size = new System.Drawing.Size(392, 21);
             this.txt_fn.TabIndex = 5;
             // 
             // txt_jobRole
@@ -116,7 +117,7 @@
             this.txt_jobRole.Location = new System.Drawing.Point(248, 202);
             this.txt_jobRole.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txt_jobRole.Name = "txt_jobRole";
-            this.txt_jobRole.Size = new System.Drawing.Size(393, 24);
+            this.txt_jobRole.Size = new System.Drawing.Size(393, 21);
             this.txt_jobRole.TabIndex = 6;
             // 
             // label4
@@ -126,7 +127,7 @@
             this.label4.Location = new System.Drawing.Point(644, 166);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 18);
+            this.label4.Size = new System.Drawing.Size(103, 15);
             this.label4.TabIndex = 8;
             this.label4.Text = "Phone Number";
             // 
@@ -135,7 +136,7 @@
             this.txt_phone.Location = new System.Drawing.Point(647, 184);
             this.txt_phone.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txt_phone.Name = "txt_phone";
-            this.txt_phone.Size = new System.Drawing.Size(264, 24);
+            this.txt_phone.Size = new System.Drawing.Size(264, 21);
             this.txt_phone.TabIndex = 9;
             // 
             // dateTimePicker_joinDate
@@ -143,7 +144,7 @@
             this.dateTimePicker_joinDate.Location = new System.Drawing.Point(647, 123);
             this.dateTimePicker_joinDate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dateTimePicker_joinDate.Name = "dateTimePicker_joinDate";
-            this.dateTimePicker_joinDate.Size = new System.Drawing.Size(187, 24);
+            this.dateTimePicker_joinDate.Size = new System.Drawing.Size(187, 21);
             this.dateTimePicker_joinDate.TabIndex = 10;
             // 
             // combo_department
@@ -158,13 +159,13 @@
             this.combo_department.Location = new System.Drawing.Point(249, 144);
             this.combo_department.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.combo_department.Name = "combo_department";
-            this.combo_department.Size = new System.Drawing.Size(283, 26);
+            this.combo_department.Size = new System.Drawing.Size(283, 23);
             this.combo_department.TabIndex = 11;
             // 
             // btn_cancel
             // 
             this.btn_cancel.BackColor = System.Drawing.Color.Red;
-            this.btn_cancel.Location = new System.Drawing.Point(307, 253);
+            this.btn_cancel.Location = new System.Drawing.Point(537, 253);
             this.btn_cancel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(104, 35);
@@ -176,7 +177,7 @@
             // btn_addNewEmp
             // 
             this.btn_addNewEmp.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btn_addNewEmp.Location = new System.Drawing.Point(436, 253);
+            this.btn_addNewEmp.Location = new System.Drawing.Point(327, 253);
             this.btn_addNewEmp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_addNewEmp.Name = "btn_addNewEmp";
             this.btn_addNewEmp.Size = new System.Drawing.Size(205, 35);
@@ -202,7 +203,7 @@
             this.label6.Location = new System.Drawing.Point(88, 58);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(115, 18);
+            this.label6.Size = new System.Drawing.Size(98, 15);
             this.label6.TabIndex = 4;
             this.label6.Text = "Add Employee";
             // 
@@ -213,7 +214,7 @@
             this.Admin_Dashboard.Location = new System.Drawing.Point(59, 10);
             this.Admin_Dashboard.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Admin_Dashboard.Name = "Admin_Dashboard";
-            this.Admin_Dashboard.Size = new System.Drawing.Size(158, 20);
+            this.Admin_Dashboard.Size = new System.Drawing.Size(136, 17);
             this.Admin_Dashboard.TabIndex = 1;
             this.Admin_Dashboard.Text = "Admin Dashboard";
             // 
@@ -307,7 +308,7 @@
             this.label5.Location = new System.Drawing.Point(245, 9);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(287, 29);
+            this.label5.Size = new System.Drawing.Size(231, 24);
             this.label5.TabIndex = 15;
             this.label5.Text = "Employee Management";
             // 
@@ -317,15 +318,32 @@
             this.label7.Location = new System.Drawing.Point(247, 38);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(115, 18);
+            this.label7.Size = new System.Drawing.Size(98, 15);
             this.label7.TabIndex = 11;
             this.label7.Text = "Add Employee";
             // 
+            // btn_addEmp1
+            // 
+            this.btn_addEmp1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_addEmp1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_addEmp1.ForeColor = System.Drawing.Color.Black;
+            this.btn_addEmp1.Image = global::PostalDepHrSystem.Properties.Resources.attendence_icon;
+            this.btn_addEmp1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_addEmp1.Location = new System.Drawing.Point(705, 2);
+            this.btn_addEmp1.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_addEmp1.Name = "btn_addEmp1";
+            this.btn_addEmp1.Size = new System.Drawing.Size(161, 41);
+            this.btn_addEmp1.TabIndex = 16;
+            this.btn_addEmp1.Text = "Add Employee";
+            this.btn_addEmp1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_addEmp1.UseVisualStyleBackColor = false;
+            // 
             // form_addEmployeeForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 348);
+            this.ClientSize = new System.Drawing.Size(867, 348);
+            this.Controls.Add(this.btn_addEmp1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel1);
@@ -381,5 +399,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btn_addEmp1;
     }
 }
