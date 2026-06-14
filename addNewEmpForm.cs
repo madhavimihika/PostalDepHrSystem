@@ -22,7 +22,7 @@ namespace PostalDepHrSystem
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             this.btn_ViewAllEmp.Click += new System.EventHandler(this.btn_ViewAllEmp_Click);
             this.btn_empEdit.Click += new System.EventHandler(this.btn_empEdit_Click);
-            this.btn_empDelete.Click += new System.EventHandler(this.btn_empDelete_Click);
+           //this.btn_empDelete.Click += new System.EventHandler(this.btn_empDelete_Click);
             this.button1.Click += new System.EventHandler(this.button1_Click);
         }
 
@@ -217,8 +217,6 @@ namespace PostalDepHrSystem
             adminDash.Show();
             this.Hide();
         }
-
-        // View All Employees Button - Show in MessageBox instead
         private void btn_ViewAllEmp_Click(object sender, EventArgs e)
         {
             try
@@ -284,6 +282,13 @@ namespace PostalDepHrSystem
                           "3. Use the Employee ID to delete records\n\n" +
                           "(Delete feature coming soon)",
                           "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btn_cancel_Click_1(object sender, EventArgs e)
+        {
+            adminDashboard adminDash = new adminDashboard();    
+            adminDash.Show();
+            this.Hide();    
         }
     }
 }

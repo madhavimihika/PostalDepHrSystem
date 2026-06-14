@@ -19,6 +19,7 @@ namespace PostalDepHrSystem
                 txt_pw.PasswordChar = '*';
             }
             this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
+            this.btn_signIn.Click += new System.EventHandler(this.button1_Click);
         }
 
         private void btn_login_Click(object sender, EventArgs e)
@@ -156,6 +157,13 @@ namespace PostalDepHrSystem
         private void Form1_Load(object sender, EventArgs e)
         {
             txt_nic.Focus();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Sign_Up signUpForm = new Sign_Up(); 
+            signUpForm.Show();
+            this.Hide();
         }
     }
 }

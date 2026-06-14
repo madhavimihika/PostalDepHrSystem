@@ -37,6 +37,7 @@
             this.txt_nic = new System.Windows.Forms.TextBox();
             this.txt_pw = new System.Windows.Forms.TextBox();
             this.btn_login = new System.Windows.Forms.Button();
+            this.btn_signIn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -68,7 +69,7 @@
             this.lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lbl.Location = new System.Drawing.Point(282, 166);
             this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(101, 39);
+            this.lbl.Size = new System.Drawing.Size(96, 38);
             this.lbl.TabIndex = 8;
             this.lbl.Text = "Login";
             this.lbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -97,27 +98,37 @@
             // 
             this.txt_nic.Location = new System.Drawing.Point(372, 223);
             this.txt_nic.Name = "txt_nic";
-            this.txt_nic.Size = new System.Drawing.Size(145, 22);
+            this.txt_nic.Size = new System.Drawing.Size(376, 22);
             this.txt_nic.TabIndex = 11;
             // 
             // txt_pw
             // 
             this.txt_pw.Location = new System.Drawing.Point(372, 262);
             this.txt_pw.Name = "txt_pw";
-            this.txt_pw.Size = new System.Drawing.Size(145, 22);
+            this.txt_pw.Size = new System.Drawing.Size(376, 22);
             this.txt_pw.TabIndex = 12;
             // 
             // btn_login
             // 
             this.btn_login.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btn_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_login.ForeColor = System.Drawing.SystemColors.InfoText;
             this.btn_login.Location = new System.Drawing.Point(292, 312);
             this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(244, 35);
+            this.btn_login.Size = new System.Drawing.Size(456, 35);
             this.btn_login.TabIndex = 13;
             this.btn_login.Text = "Login";
             this.btn_login.UseVisualStyleBackColor = false;
+            // 
+            // btn_signIn
+            // 
+            this.btn_signIn.Location = new System.Drawing.Point(292, 353);
+            this.btn_signIn.Name = "btn_signIn";
+            this.btn_signIn.Size = new System.Drawing.Size(459, 27);
+            this.btn_signIn.TabIndex = 14;
+            this.btn_signIn.Text = "Don\'t you have an Account? SIgn In";
+            this.btn_signIn.UseVisualStyleBackColor = true;
+            this.btn_signIn.Click += new System.EventHandler(this.button1_Click);
             // 
             // Login
             // 
@@ -126,6 +137,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(833, 460);
+            this.Controls.Add(this.btn_signIn);
             this.Controls.Add(this.btn_login);
             this.Controls.Add(this.txt_pw);
             this.Controls.Add(this.txt_nic);
@@ -156,7 +168,7 @@
         private System.Windows.Forms.TextBox txt_nic;
         private System.Windows.Forms.TextBox txt_pw;
         private System.Windows.Forms.Button btn_login;
-
+        private System.Windows.Forms.Button btn_signIn;
     }
 }
 
