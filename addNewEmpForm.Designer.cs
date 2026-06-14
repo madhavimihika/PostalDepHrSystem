@@ -40,25 +40,23 @@
             this.combo_department = new System.Windows.Forms.ComboBox();
             this.btn_cancel = new System.Windows.Forms.Button();
             this.btn_addNewEmp = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.pic_emp = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.Admin_Dashboard = new System.Windows.Forms.Label();
-            this.btn_empDelete = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btn_empEdit = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btn_ViewAllEmp = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pic_emp = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_emp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_emp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_fn
@@ -98,7 +96,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(718, 64);
+            this.label3.Location = new System.Drawing.Point(644, 97);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 18);
@@ -110,23 +108,22 @@
             this.txt_fn.Location = new System.Drawing.Point(249, 88);
             this.txt_fn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txt_fn.Name = "txt_fn";
-            this.txt_fn.Size = new System.Drawing.Size(438, 24);
+            this.txt_fn.Size = new System.Drawing.Size(392, 24);
             this.txt_fn.TabIndex = 5;
-//            this.txt_fn.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txt_jobRole
             // 
             this.txt_jobRole.Location = new System.Drawing.Point(248, 202);
             this.txt_jobRole.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txt_jobRole.Name = "txt_jobRole";
-            this.txt_jobRole.Size = new System.Drawing.Size(438, 24);
+            this.txt_jobRole.Size = new System.Drawing.Size(393, 24);
             this.txt_jobRole.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(718, 126);
+            this.label4.Location = new System.Drawing.Point(644, 166);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(120, 18);
@@ -135,7 +132,7 @@
             // 
             // txt_phone
             // 
-            this.txt_phone.Location = new System.Drawing.Point(720, 150);
+            this.txt_phone.Location = new System.Drawing.Point(647, 184);
             this.txt_phone.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txt_phone.Name = "txt_phone";
             this.txt_phone.Size = new System.Drawing.Size(264, 24);
@@ -143,10 +140,10 @@
             // 
             // dateTimePicker_joinDate
             // 
-            this.dateTimePicker_joinDate.Location = new System.Drawing.Point(721, 86);
+            this.dateTimePicker_joinDate.Location = new System.Drawing.Point(647, 123);
             this.dateTimePicker_joinDate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dateTimePicker_joinDate.Name = "dateTimePicker_joinDate";
-            this.dateTimePicker_joinDate.Size = new System.Drawing.Size(249, 24);
+            this.dateTimePicker_joinDate.Size = new System.Drawing.Size(187, 24);
             this.dateTimePicker_joinDate.TabIndex = 10;
             // 
             // combo_department
@@ -167,34 +164,25 @@
             // btn_cancel
             // 
             this.btn_cancel.BackColor = System.Drawing.Color.Red;
-            this.btn_cancel.Location = new System.Drawing.Point(658, 279);
+            this.btn_cancel.Location = new System.Drawing.Point(307, 253);
             this.btn_cancel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(104, 35);
             this.btn_cancel.TabIndex = 12;
             this.btn_cancel.Text = "Cancel";
             this.btn_cancel.UseVisualStyleBackColor = false;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click_1);
             // 
             // btn_addNewEmp
             // 
             this.btn_addNewEmp.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btn_addNewEmp.Location = new System.Drawing.Point(754, 279);
+            this.btn_addNewEmp.Location = new System.Drawing.Point(436, 253);
             this.btn_addNewEmp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_addNewEmp.Name = "btn_addNewEmp";
             this.btn_addNewEmp.Size = new System.Drawing.Size(205, 35);
             this.btn_addNewEmp.TabIndex = 13;
             this.btn_addNewEmp.Text = "Add New Employee";
             this.btn_addNewEmp.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::PostalDepHrSystem.Properties.Resources.admin_icon;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(51, 40);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // button1
             // 
@@ -207,16 +195,6 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Add Employee";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // pic_emp
-            // 
-            this.pic_emp.BackgroundImage = global::PostalDepHrSystem.Properties.Resources.employee_icon;
-            this.pic_emp.Location = new System.Drawing.Point(12, 80);
-            this.pic_emp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pic_emp.Name = "pic_emp";
-            this.pic_emp.Size = new System.Drawing.Size(59, 56);
-            this.pic_emp.TabIndex = 3;
-            this.pic_emp.TabStop = false;
             // 
             // label6
             // 
@@ -239,68 +217,29 @@
             this.Admin_Dashboard.TabIndex = 1;
             this.Admin_Dashboard.Text = "Admin Dashboard";
             // 
-            // btn_empDelete
-            // 
-            this.btn_empDelete.ForeColor = System.Drawing.Color.Black;
-            this.btn_empDelete.Location = new System.Drawing.Point(71, 143);
-            this.btn_empDelete.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btn_empDelete.Name = "btn_empDelete";
-            this.btn_empDelete.Size = new System.Drawing.Size(162, 56);
-            this.btn_empDelete.TabIndex = 5;
-            this.btn_empDelete.Text = "Remove Employee";
-            this.btn_empDelete.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::PostalDepHrSystem.Properties.Resources.employee_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 143);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(59, 56);
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = global::PostalDepHrSystem.Properties.Resources.employee_icon;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 206);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(59, 56);
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
-            // 
             // btn_empEdit
             // 
+            this.btn_empEdit.BackColor = System.Drawing.Color.Orange;
             this.btn_empEdit.ForeColor = System.Drawing.Color.Black;
-            this.btn_empEdit.Location = new System.Drawing.Point(71, 206);
+            this.btn_empEdit.Location = new System.Drawing.Point(71, 142);
             this.btn_empEdit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_empEdit.Name = "btn_empEdit";
             this.btn_empEdit.Size = new System.Drawing.Size(162, 56);
             this.btn_empEdit.TabIndex = 8;
             this.btn_empEdit.Text = "Edit Employee";
-            this.btn_empEdit.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = global::PostalDepHrSystem.Properties.Resources.employee_icon;
-            this.pictureBox4.Location = new System.Drawing.Point(12, 269);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(59, 56);
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
+            this.btn_empEdit.UseVisualStyleBackColor = false;
             // 
             // btn_ViewAllEmp
             // 
+            this.btn_ViewAllEmp.BackColor = System.Drawing.Color.Chartreuse;
             this.btn_ViewAllEmp.ForeColor = System.Drawing.Color.Black;
-            this.btn_ViewAllEmp.Location = new System.Drawing.Point(68, 269);
+            this.btn_ViewAllEmp.Location = new System.Drawing.Point(71, 204);
             this.btn_ViewAllEmp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_ViewAllEmp.Name = "btn_ViewAllEmp";
             this.btn_ViewAllEmp.Size = new System.Drawing.Size(162, 56);
             this.btn_ViewAllEmp.TabIndex = 10;
             this.btn_ViewAllEmp.Text = "View ALl Employee";
-            this.btn_ViewAllEmp.UseVisualStyleBackColor = true;
+            this.btn_ViewAllEmp.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -309,8 +248,6 @@
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.btn_empEdit);
             this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.btn_empDelete);
             this.panel1.Controls.Add(this.Admin_Dashboard);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.pic_emp);
@@ -319,26 +256,77 @@
             this.panel1.Location = new System.Drawing.Point(2, -1);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(234, 510);
+            this.panel1.Size = new System.Drawing.Size(234, 348);
             this.panel1.TabIndex = 14;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = global::PostalDepHrSystem.Properties.Resources.employee_icon;
+            this.pictureBox4.Location = new System.Drawing.Point(11, 207);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(59, 56);
+            this.pictureBox4.TabIndex = 9;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = global::PostalDepHrSystem.Properties.Resources.employee_icon;
+            this.pictureBox3.Location = new System.Drawing.Point(11, 145);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(59, 56);
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pic_emp
+            // 
+            this.pic_emp.BackgroundImage = global::PostalDepHrSystem.Properties.Resources.employee_icon;
+            this.pic_emp.Location = new System.Drawing.Point(12, 80);
+            this.pic_emp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pic_emp.Name = "pic_emp";
+            this.pic_emp.Size = new System.Drawing.Size(59, 56);
+            this.pic_emp.TabIndex = 3;
+            this.pic_emp.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::PostalDepHrSystem.Properties.Resources.admin_icon;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(51, 40);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.IndianRed;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(245, 22);
+            this.label5.Location = new System.Drawing.Point(245, 9);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(287, 29);
             this.label5.TabIndex = 15;
             this.label5.Text = "Employee Management";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(247, 38);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(115, 18);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Add Employee";
+            // 
             // form_addEmployeeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 348);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_addNewEmp);
@@ -357,13 +345,12 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "form_addEmployeeForm";
             this.Text = "form_addEmployee";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_emp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_emp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -387,13 +374,12 @@
         private System.Windows.Forms.PictureBox pic_emp;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label Admin_Dashboard;
-        private System.Windows.Forms.Button btn_empDelete;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btn_empEdit;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button btn_ViewAllEmp;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label7;
     }
 }
