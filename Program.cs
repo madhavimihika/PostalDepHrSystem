@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace PostalDepHrSystem
@@ -10,13 +9,20 @@ namespace PostalDepHrSystem
         [STAThread]
         static void Main()
         {
-            // Prevent multiple instances
+            // Kill any existing instance before starting new one
             string processName = Process.GetCurrentProcess().ProcessName;
-            if (Process.GetProcessesByName(processName).Length > 1)
+            Process[] processes = Process.GetProcessesByName(processName);
+
+            if (processes.Length > 1)
             {
-                MessageBox.Show("Application is already running!\nPlease close the existing instance first.",
-                              "Already Running", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                // Kill the old instance
+                foreach (Process p in processes)
+                {
+                    if (p.Id != Process.GetCurrentProcess().Id)
+                    {
+                        p.Kill();
+                    }
+                }
             }
 
             Application.EnableVisualStyles();

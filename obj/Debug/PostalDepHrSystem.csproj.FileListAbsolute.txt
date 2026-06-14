@@ -45,3 +45,5 @@ C:\Users\mihik\C#\PostalDepHrSystem\PostalDepHrSystem\bin\Debug\System.Threading
 C:\Users\mihik\C#\PostalDepHrSystem\PostalDepHrSystem\obj\Debug\PostalDe.EA9BE743.Up2Date
 C:\Users\mihik\C#\PostalDepHrSystem\PostalDepHrSystem\obj\Debug\PostalDepHrSystem.form_addEmployeeForm.resources
 C:\Users\mihik\C#\PostalDepHrSystem\PostalDepHrSystem\obj\Debug\PostalDepHrSystem.adminDashboard.resources
+C:\Users\mihik\C#\PostalDepHrSystem\PostalDepHrSystem\obj\Debug\PostalDepHrSystem.findEmployee.resources
+C:\Users\mihik\C#\PostalDepHrSystem\PostalDepHrSystem\obj\Debug\PostalDepHrSystem.EditEmployee.resources
