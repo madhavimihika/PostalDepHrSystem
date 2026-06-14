@@ -102,6 +102,18 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="adminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminDashboard.Designer.cs">
+      <DependentUpon>adminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addNewEmpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addNewEmpForm.Designer.cs">
+      <DependentUpon>addNewEmpForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +135,12 @@
     </Compile>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminDashboard.resx">
+      <DependentUpon>adminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addNewEmpForm.resx">
+      <DependentUpon>addNewEmpForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

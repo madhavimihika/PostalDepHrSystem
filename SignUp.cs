@@ -1,13 +1,14 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using PostalDepHrSystem;
+using System;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 
 namespace PostalDepHrSystem
 {
     public partial class Sign_Up : Form
     {
-        // Database connectio
+        // Database connection
         private string connStr = "server=localhost;port=3306;username=root;password=;database=Postal_HR_System;";
 
         public Sign_Up()
@@ -15,8 +16,13 @@ namespace PostalDepHrSystem
             InitializeComponent();
             LoadComboBoxData();
 
-            // button event is connected?
+            // Connect events
             this.btn_signIn.Click += new System.EventHandler(this.btn_signIn_Click);
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
+
+            // Ensure button is visible
+            this.btn_login.BringToFront();
+            this.btn_login.Visible = true;
         }
 
         private void LoadComboBoxData()
@@ -35,8 +41,7 @@ namespace PostalDepHrSystem
         private void btn_signIn_Click(object sender, EventArgs e)
         {
             // Validate all required fields
-            if (string.IsNullOrWhiteSpace(txt_firstName.Text) ||
-                txt_firstName.Text == "Type your Full Name")
+            if (string.IsNullOrWhiteSpace(txt_firstName.Text))
             {
                 MessageBox.Show("Please enter your full name.", "Validation Error",
                               MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -52,8 +57,7 @@ namespace PostalDepHrSystem
                 return;
             }
 
-            if (string.IsNullOrWhiteSpace(txt_designation.Text) ||
-                txt_designation.Text == "Designation")
+            if (string.IsNullOrWhiteSpace(txt_designation.Text))
             {
                 MessageBox.Show("Please enter your designation.", "Validation Error",
                               MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -61,7 +65,7 @@ namespace PostalDepHrSystem
                 return;
             }
 
-            if (string.IsNullOrWhiteSpace(txt_nic.Text) || txt_nic.Text == "Type you NIC here")
+            if (string.IsNullOrWhiteSpace(txt_nic.Text))
             {
                 MessageBox.Show("Please enter your NIC number.", "Validation Error",
                               MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -78,7 +82,7 @@ namespace PostalDepHrSystem
                 return;
             }
 
-            if (string.IsNullOrWhiteSpace(txt_pw.Text) || txt_pw.Text == "Type your Password here")
+            if (string.IsNullOrWhiteSpace(txt_pw.Text))
             {
                 MessageBox.Show("Please enter a password.", "Validation Error",
                               MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -114,7 +118,7 @@ namespace PostalDepHrSystem
                 {
                     conn.Open();
 
-                    // Check if user already existss
+                    // Check if user already exists
                     string checkQuery = "SELECT COUNT(*) FROM Users WHERE NIC = @nic";
                     using (MySqlCommand checkCmd = new MySqlCommand(checkQuery, conn))
                     {
@@ -129,7 +133,7 @@ namespace PostalDepHrSystem
                         }
                     }
 
-                    // Insert
+                    // Insert new user
                     string query = @"INSERT INTO Users (FirstName, Division, Designation, NIC, Password) 
                                     VALUES (@fname, @div, @desig, @nic, @pass)";
 
@@ -171,6 +175,14 @@ namespace PostalDepHrSystem
                 MessageBox.Show($"An error occurred: {ex.Message}", "Error",
                               MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        // THIS IS THE NAVIGATION TO LOGIN FORM
+        private void btn_login_Click(object sender, EventArgs e)
+        {
+            Login loginForm = new Login();
+            loginForm.Show();
+            this.Hide();
         }
     }
 }
